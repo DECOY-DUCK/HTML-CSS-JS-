@@ -1,4 +1,8 @@
 @charset "utf-8";
+body {
+  height: 800px;
+  overflow: auto;
+}
 
 a {
   color: black;
@@ -20,7 +24,7 @@ a:visited {
 }
 
 h1 {
-  font-size: 95%;
+  font-size: 150%;
   text-align: center;
 }
 
@@ -32,21 +36,25 @@ h1 {
   display: grid;
   height: 100vh;
   grid-template-rows:
-    [body-start] 10%
-    [body-end footer-start] 80%
-    [footer-end] 10%;
+    [item1-start] 15%
+    [item1-end item2-start] 5%
+    [item2-end body-start] 80%
+    [body-end item3-start] 30px
+    [item3-end]100px;
 
   grid-template-columns:
-    [left-navbar-start] 33%
-    [left-navbar-end content-start] 33%
-    [content-end right-sidebar-start] 33%
-    [right-sidebar-end];
+    [] 33%
+    [] 33%
+    [] 33%;
 }
 .item1 {
   grid-column-start: 1;
+
   grid-column-end: 4;
 }
 img {
+  display: block;
+  margin: 0 auto;
   width: 80%;
   height: 80%;
 }
