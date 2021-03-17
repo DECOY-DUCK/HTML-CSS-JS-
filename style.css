@@ -44,7 +44,7 @@ h1 {
 
   grid-template-columns:
     [] 33%
-    [ddddd] 33%
+    [] 33%
     [] 33%;
 }
 .item1 {
