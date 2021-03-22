@@ -6,6 +6,13 @@ body {
   height: 100%;
 }
 
+a,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
 .wrapper {
   display: grid;
   height: 100%;
@@ -21,6 +28,12 @@ body {
 .header {
   grid-area: header;
 
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +55,12 @@ div.bar {
 
 .sidebar-a {
   grid-area: a;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-a img {
+  width: 30rem;
+  height: 30rem;
 }
 
 .main {
@@ -66,12 +85,14 @@ div.bar {
   display: flex;
   font-size: 80%;
 }
-.main_img {
+.main img {
   display: block;
   margin: 0 auto;
   padding-top: 50px;
   width: 80%;
   height: 90%;
+  min-width: 500px;
+  min-height: 500px;
 }
 
 .main_p {
@@ -121,7 +142,21 @@ div.bar {
   align-items: center;
   padding: 20px;
 
+  width: 40rem;
+  height: 30rem;
+
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login_bg {
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/e8/9c/78/e89c78e2dd46803b5e01014062619826.jpg");
+  filter: blur(5px);
 }
 
 .login_page input {
@@ -147,6 +182,12 @@ div.bar {
   height: 5em;
 
   margin-bottom: 5px;
+  transition: all 0.9s, color 0.3s;
+}
+
+.login_page button:hover {
+  color: black;
+  background-color: white;
 }
 
 .login_page a {
