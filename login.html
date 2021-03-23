@@ -13,18 +13,27 @@
     <!-- 백그라운드 blur effect 안먹힘->이미지,텍스트 분리후 이미지 blur처리 -->
     <div class= "login_page">
         
-        <h1 style="border-bottom: 2px solid rgb(255, 255, 255); color:rgb(252, 252, 252)">LOGIN</h1>
-        <div><label><input type="text" placeholder="id" id="txtid"></label></div>
-        <div><label><input type="password" placeholder="password" id="txtpw"></label></div>
-        
-        <div style="display:flex; justify-content: flex-start; width:25em;">
-            <input type="checkbox" style="width:20px;height:20px; ">
-            <span style="color:white;">remember me</span>
+            <h1 style="border-bottom: 2px solid rgb(255, 255, 255); color:rgb(252, 252, 252)">LOGIN</h1>
+            <div><label><input type="text" placeholder="id" id="txtid"></label></div>
+            <div><label><input type="password" placeholder="password" id="txtpw"></label></div>
+            
+            <div style="display:flex; justify-content: flex-start; width:25em;">
+                <input type="checkbox" style="width:20px;height:20px; ">
+                <span style="color:white;">remember me</span>
+            </div>
+            
+            <button onclick="clkLogin();"><h2>로그인</h2></button>
+            <a href="join.html"><button><h2>회원가입</h2></button></a>
+            <a href="#"><div style="color: white; border-bottom: 2px solid white;display: flex;justify-content: center;">forget password?</div></a>
+        </div>
+            
+        <div class="login_page1">
+            social login
         </div>
         
-        <button onclick="clkLogin();"><h2>로그인</h2></button>
-        <a href="join.html"><button><h2>회원가입</h2></button></a>
         
     </div>
+
+    
 </body>
 </html>
